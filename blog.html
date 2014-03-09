@@ -1,0 +1,29 @@
+---
+layout: pages
+title: blog
+---
+
+<aside class="left-sidebar">
+<div data-magellan-expedition="fixed">
+	<ul class="side-nav">	
+		<li class="menu-title"><label>Menu item title</label></li>
+		<li data-magellan-arrival=""><a href="#">Link 2</a></li>
+		<li data-magellan-arrival=""><a href="#">Link 3</a></li>
+		<li class="menu-title"><label>Menu item title</label></li>
+		<li data-magellan-arrival=""><a href="#">Link 4</a></li>
+		<li data-magellan-arrival=""><a href="#">Link 5</a></li>
+	</ul>
+</div>
+</aside>
+
+    <div class="content page-aside">
+		<h1 class="page-title">{{ page.title }}</h1>
+		<dl class="blog-wrap">
+		{% for post in site.posts %}
+	         <dd class="" data-magellan-destination="" name="">
+	         <a href="{{ post.url }}">{{ post.title }}</a></li>
+	         <small>{{ post.date | date_to_string }}</small>
+          </dd>
+          {% endfor %}
+          </dl>
+    </div>

@@ -3,11 +3,54 @@ layout: default
 title: Open Ag Data Alliance
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<div class="page-wrap home">
+
+      <header class="main-header">
+       <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/aultac/oada-api-spec">Fork me on GitHub</a>
+        </div>
+    </div>
+      
+    <div class="row">
+      <div class="intro small-12 small-centered medium-10 medium-centered large-8 large-centered columns panel radius">
+      	<span class=""><h1>Project Logo</h1></span>
+        <h1>{{ site.name }}</h1>
+        <span class="site-desc">Project description</span>         
+        <h1></h1>
+        <ul>
+          <li>'grunt' - watching (Sass, Server on 127.0.0.1:9000 with LiveReload)</li>
+          <li>'grunt build' - Sass</li>
+          <li>'grunt validate-js' - JSHint</li>
+          <li>'grunt publish' - dist directory</li>
+          <li>'grunt server-dist' - server on 127.0.0.1:9001 - dist directory (preview only)</li>
+        </ul>
+        <h2 class="text-right">
+          <a href="https://github.com/juliancwirko/generator-zf5"><i class="fa fa-github"></i></a>
+        </h2>
+      </div>
+      <div class="contain-to-grid sticky" data-options="sticky_on: large"> <nav class="top-bar" data-topbar> <ul class="title-area"> <li class="name"> <h1><a href="#">{{ site.name }}</a></h1> </li> <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li> </ul> <section class="top-bar-section"> <!-- Right Nav Section --> <ul class="right"> <li class="active"><a href="#">Right Button Active</a></li> <li class="has-dropdown"> <a href="#">Right Button with Dropdown</a> <ul class="dropdown"> <li><a href="#">First link in dropdown</a></li> </ul> </li> </ul> <!-- Left Nav Section --> <ul class="left"> <li><a href="#">Left Nav Button</a></li> </ul> </section> </nav> </div>
+    </div>
+      </header>
+	  
+	  <div class="home-foot"><ul class="social-foot">
+      		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      		<li><a href="#"><i class="fa fa-github"></i></a></li>
+      		</ul>
+       <p>Some info here</p>
+    </div>      
+    </div>
+    <div class="page-wrap">
+          <article class="main-wrap">
+	         <h1>Additional Here</h1>
+	         <section class="">
+	         <h2>Information</h2>
+	         <p>Some Information here</p>
+	         </section>
+	         <section class="">
+		        <h2>Second Section</h2>
+		        <p>Addtional Info</p> 
+	         </section>
+          </article>
+    </div>

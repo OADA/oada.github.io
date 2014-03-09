@@ -1,0 +1,11 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agent: *
+
+Disallow: /fonts/
+Disallow: /css/
+Disallow: /js/
+Disallow: /json/
+Disallow: /php/
+Disallow: /cgi-bin/
