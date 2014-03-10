@@ -1,12 +1,13 @@
 ---
-layout: pages
-title: Open Ag Data Alliance Principles
+layout: page
+title: Open Ag Data Allaince Principles
 ---
-
+<a name="top" ></a>
+<div class="page-desc" data-magellan-destination="top">An open standards software project to bring farmer-centered interoperability, security, and privacy to agricultural data.</div>
 
 <aside class="left-sidebar">
 <div data-magellan-expedition="fixed">
-  <ul class="side-nav">  
+  <ul class="side-nav" id="sticker">  
     <li class="menu-title"><label>Jump to a section:</label></li>
     <li data-magellan-arrival="top"><a href="#top">Top</a></li>
     <li data-magellan-arrival="summary"><a href="#summary">Summary</a></li>
@@ -20,12 +21,6 @@ title: Open Ag Data Alliance Principles
 </aside>
 
 <div class="content page-aside">
-
-  <a name="top"></a>
-  <h1 data-magellan-destination="top" class="page-title">{{ page.title }}</h1>
-  An open standards software project to bring farmer-centered interoperability, security, and privacy to 
-  agricultural data.
-
   <article class="main-wrap">
 
     <!-- SUMMARY SECTION -->
@@ -55,6 +50,7 @@ title: Open Ag Data Alliance Principles
     <section class="" data-magellan-destination="background" name="section-background">
 
       <h2>Background</h2>
+    <div class="row">    
       <p>Modern production agriculture has the potential to dramatically improve crop yields and reduce 
       environmental impacts by enabling farmers to properly evaluate past, current and future farm management 
       decisions through analysis of agronomic data generated in the field.</p>
@@ -67,13 +63,14 @@ title: Open Ag Data Alliance Principles
       <p>The most scalable solution for farmers is to enable their hardware and software systems to communicate 
       automatically through secure cloud services or tools. Any system needs to incorporate data from 
       a multitude of sources in order to be useful. However, existing solutions suffer from:
-      <ul class="well">
+      <div class="panel">
+      <ul>
         <li>an inability to gather data from all aspects of any given farm since no one manufacturer 
             accesses all the operational data on a farm, </li>
         <li>farmers’ concern about what will happen to their data, </li>
         <li>and questions about data ownership and intellectual property.</li>
       </ul>
-
+      </div>
       <p>In order to enable this next stage in production agriculture productivity, these three issues 
       have to be resolved.  Past attempts at solving data sharing and compatibility have revolved around 
       creating monolithic standards that are licensed commercially and selectively. Farmers require an 
@@ -81,8 +78,8 @@ title: Open Ag Data Alliance Principles
       and doesn’t require farmers to pay to access their own data.  This is not a unique set of challenges. 
       Other industries have faced a similar stage in their evolution, including financial services, 
       healthcare, and the Internet. In all cases, a distributed, rather than centralized, network model 
-      emerged as best for the end users. 
-
+      emerged as best for the end users. </p>
+    </div>
     </section>
 
     <!-- MISSION SECTION -->
@@ -90,6 +87,7 @@ title: Open Ag Data Alliance Principles
     <section class="" data-magellan-destination="mission" name="section-mission">
 
       <h2>What OADA is</h2>
+        <div class="row">
       <p>With the mission to ensure farmers have full data access, security and privacy, OADA:
       <ul>
         <li>will operate with a farmer-focused approach through a central guiding principle that each 
@@ -106,8 +104,9 @@ title: Open Ag Data Alliance Principles
         <li>will direct any financial contributions to a not-for-profit foundation whose purpose will 
             be to enable open source projects in agriculture in service of the OADA mission.</li>
       </ul></p>
-
+        </div>
       <h2>What OADA is not</h2>
+      <div class="row">
       <p>It is important to also specify what OADA does not intend to do.  OADA:
       <ul>
         <li>will not produce or sell commercial products,</li>
@@ -116,8 +115,9 @@ title: Open Ag Data Alliance Principles
         <li>and will not endorse or oppose products or services beyond providing software tests that 
             can to used to validate OADA functional support. </li>
       </ul></p>
-
+        </div>
       <h2>The OADA Approach to Interoperability</h2>
+        <div class="row">
       <p>The OADA approach to interoperability is to avoid implementation frameworks that inherently 
       dictate winners and losers, focusing instead on providing developers with the useful libraries 
       they need in order to communicate and access data without spending tedious hours memorizing several 
@@ -138,15 +138,16 @@ title: Open Ag Data Alliance Principles
       technologies familiar to their organization, the existence of an open reference implementation 
       that contains a verification test suite will provide a framework by which the industry can work 
       together.</p>
-
-      <h2>How OADA Supports Security & Farmer Privacy</h2>
+            </div>
+      <h2>How OADA Supports Security &amp; Farmer Privacy</h2>
+        <div class="row">
       <p>OADA will develop authentication and security protocols that will support third-party verification 
       of provider security and privacy practices. OADA security and privacy working groups will collaborate 
       with stakeholder groups in defining the technical capabilities that can represent the range of 
       business security and privacy practices that are desired by the broad community. The farmer will 
       be able to use OADA services with a full understanding of different service provider security and 
-      privacy levels which are clearly and simply represented through their OADA-compliant tools.
-
+      privacy levels which are clearly and simply represented through their OADA-compliant tools.</p>
+        </div>
     </section>
 
 
@@ -155,6 +156,7 @@ title: Open Ag Data Alliance Principles
     <section class="" data-magellan-destination="use-case" name="section-use-case">
 
       <h2>Example Use Case</h2>
+        <div class="row">
       <p>The OADA vision is best explained through an example.  Consider the common use case of prescription 
       maps.  Frank is a farmer with a corn planter capable of varying seed population based on GPS location 
       using a prescription map: i.e., under the irrigator seeds should be closer together and outside the 
@@ -166,17 +168,17 @@ title: Open Ag Data Alliance Principles
       and info on the type of corn variety that Frank intends to plant in each field.  Andy loads Frank’s 
       data into an existing software package, generates a prescription map that works with Frank’s planter 
       monitor, and gets the map to Frank before planting begins.</p>
-  
+        </div>
        
       <h2>Use Case with Current Industry State</h2>
       <figure>
-        <img src="images/principles/use_case_before.png"/>
+        <img src="/img/principles/use_case_before.png"/>
         <figcaption>
-          Figure 1: Current state of the ag data industry from a farmer's point of view.  Note 
-          that some important data (in red) never makes it back to the farmer at all.  
+          <p><small>Figure 1: Current state of the ag data industry from a farmer's point of view.  Note 
+          that some important data (in red) never makes it back to the farmer at all.</small> </p> 
         </figcaption>
       </figure>
-  
+        <div class="row">
       <p>The way this use case generally occurs today begins with Frank telling Andy those dreams of having 
       all that data aren’t going to happen.  Frank then spends a painstaking amount of time simply gathering 
       whatever information he can.  Exporting yield data for every field from his desktop computer or OEM-specific 
@@ -192,18 +194,17 @@ title: Open Ag Data Alliance Principles
       prescription, exports a file formatted for Frank’s planter monitor, and emails it to Frank. Frank 
       saves the file on his computer with prescriptions from other people for other fields, and eventually 
       puts them on a USB stick to import into his planter monitor.</p>
-  
-
+        </div>
       <h2>Use Case with OADA Interoperability</h2>
       <figure>
-        <img src="images/principles/use_case_after.png"/>
-        <figcaption>
+        <img src="/img/principles/use_case_after.png"/>
+        <figcaption><p><small>
           Figure 2: The farmer's clouds can work together through the common OADA REST API to enable trusted 
           agents to manage the farmer's data for him.  Should the farmer become unhappy with any given cloud 
-          provider, he can easily transfer his data to another cloud provider.
+          provider, he can easily transfer his data to another cloud provider.</small></p>
         </figcaption>
       </figure>
-  
+        <div class="row">
       <p>The OADA example workflow for the prescription map is one where Frank has an account with an OADA-compliant 
       cloud provider.  His precision ag data is there, his third-party applicator’s precision ag records 
       for his fields are there, and the KML for his irrigator pivot outline is there.  Some of Frank’s 
@@ -228,7 +229,7 @@ title: Open Ag Data Alliance Principles
       store.  That basic layer will allow OADA to extend and support a wide array of ag-specific features 
       that simply are not possible with standard file storage, such as opening files directly in client 
       software without the need to manually specify any information about them.</p>
-
+        </div>
     </section>
 
 
@@ -237,6 +238,7 @@ title: Open Ag Data Alliance Principles
     <section class="" data-magellan-destination="tech-summary" name="section-tech-summary">
 
       <h2>Technical Summary of the OADA Approach</h2>
+      <div class="row">
       <p>The following sections contain technical details and are written for architects and engineers. </p>
 
       <p>To address the farmer’s data interoperability and security concerns, a set of common, extensible 
@@ -278,9 +280,10 @@ title: Open Ag Data Alliance Principles
       language to properly and easily relate the ramifications of complex technical details.  For example, 
       OADA “level 1” and “level 2” compliance will have a definite meaning, and the industry can begin 
       with that definition as a means to communicate and compare business practices.</p>
-
+    </div>
 
       <h2>Technical Roadmap</h2>
+      <div class="row">
       <p>The features described here are a starting point and will eventually be finalized through involvement 
       of the broader OADA technical community. A first draft of the API can be found on GitHub at 
       https://github.com/OADA/oada-api-spec/blob/master/oada-api.raml</p>
@@ -308,9 +311,9 @@ title: Open Ag Data Alliance Principles
             will also be supported to enable individual implementations to add features as they see fit.  </li>
         <li>System Features – A set of operations to communicate which data formats and transformations 
             the OADA API implementation supports.</li>
-      </ul>
-      An early draft of the API specification using the API specification language <a href="http://raml.org">RAML</a>
-      can be found on <a href="https://github.com/OADA/oada-api-spec/blob/master/oada-api.raml">Github</a>
+      </ul></p>
+     <p> An early draft of the API specification using the API specification language <a href="http://raml.org">RAML</a>
+      can be found on <a href="https://github.com/OADA/oada-api-spec/blob/master/oada-api.raml">Github</a></p>
 
       <p>Potential future API capabilities will include searching, synchronization, alerting, and streaming:
       <ul>
@@ -322,8 +325,8 @@ title: Open Ag Data Alliance Principles
             identify data layers that fall with in a field boundary. Searching will support use cases that 
             require identifying key data layers that need to be transferred from a pure data management provider 
             to an ag analytics provider that is providing prescription services.</li>
-      </ul>
-      A reference implementation of the API specification in a yet to be identified programming language 
+      </ul></p>
+	  <p>A reference implementation of the API specification in a yet to be identified programming language 
       will be developed and maintained by the OADA technical community and hosted on 
       <a href="https://github.com/OADA">GitHub</a>.</p>
 
@@ -335,7 +338,7 @@ title: Open Ag Data Alliance Principles
       <p>Other potential community driven technical artifacts include transformation libraries that convert 
       data between the different proprietary industry data formats and existing open standard formats 
       such as shape, GeoJSON, etc.</p>
-
+      </div>
     </section>
 
 
@@ -352,5 +355,3 @@ title: Open Ag Data Alliance Principles
     </section>
 
   </article>
-</div>
-

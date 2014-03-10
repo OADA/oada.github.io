@@ -1,0 +1,17 @@
+---
+layout: page
+title: Latest Updates
+---
+{% include post-nav.md %}
+
+           <div class="content page-aside">
+  		<section class="post-excerpt">
+		{% for post in site.posts %}
+	         <section class="" data-magellan-destination="" name="">
+	         <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+	         <small><i class="fa fa-calendar"></i> {{ post.date | date_to_string }} | <i class="fa fa-tag"></i> {{post.tags}}</small>
+	         <p>{{ post.content }}</p>
+          </section>
+          {% endfor %}
+          </section>
+    </div>

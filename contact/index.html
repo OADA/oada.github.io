@@ -1,0 +1,40 @@
+---
+layout: page
+title: Contact
+---
+
+
+{% include post-nav.md %}
+
+    <div class="content page-aside">
+    
+		
+		
+		 <form data-abide class="contact-form clearfix animated fadeIn" method="post" action="contact.php">
+                            <div class="large-5 columns">
+                             <label>Name <small>required</small></label> 
+                                <input type="text" required="" pattern="[a-zA-Z]+" placeholder="Ful Name" name="full_name"> 
+                            <small class="error">Name is required and must be a string.</small>
+                            </div>                           
+                             <div class="large-5 columns">
+                                <label>Email <small>required</small></label> <input type="email" required="" placeholder="email@domain.com" name="email"> 
+                                <small class="error">An email address is required.</small>
+                            </div>
+                        
+							<div class="large-5 columns">
+                                <label>Phone <small>optional</small></label> <input type="tel" placeholder="(###)###-####" pattern="" name="phone">
+                            </div>                            
+                           <div class="large-5 columns">
+                                <label>Website <small>optional</small></label>
+								<input type="url" placeholder="http://www.mywebsite.com" name="website">    
+						</div>					
+                             <div class="large-8 columns">
+                             <label>Message <small>required</small></label>
+                                <textarea placeholder="Type your message here" required="" maxlength="5000" name="comments"></textarea>
+                                 <small class="error">Please provide some additional info.</small>
+                            </div>
+						<div class="columns">
+                            <button type="submit">Submit</button>
+						</div>
+                        </form>       
+    </div>
