@@ -1,0 +1,27 @@
+---
+layout: page
+---
+
+<article class="main-wrap clearfix">
+<header class="post-title">
+<p><i class="fa fa-calendar"></i> {{ page.date | date_to_string }}</p>
+</header>
+<section class="content post">
+{{ content }}
+</section>
+<footer class="social-share">
+	
+	{% include social-share.md%}
+
+<!--	<div class="post-nav">
+			<a class="button left round" href="">To Previous Post</a>
+			<a class="button right round" href="">To Next Post</a>
+	</div>  -->
+</footer>
+
+<div class="comments clearfix">
+	{% include disqus.md %}
+</div>
+
+
+</article>

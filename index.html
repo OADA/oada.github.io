@@ -1,34 +1,71 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Coming Soon</title>
-<link href="tools/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="tools/jquery.min.js"></script> 
-<script type="text/javascript" src="tools/cufon-yui.js"></script>
-<script type="text/javascript" src="tools/Bebas_400.font.js"></script>
-<script type="text/javascript" src="tools/Bell_Gothic_Std_300.font.js"></script>
-<script type="text/javascript">
-	Cufon.replace('a.logo', {fontFamily: 'Bebas'});
-	Cufon.replace('a.logo span', {fontFamily: 'Bell Gothic Std'});
-</script>
+---
+title: Home
+layout: default
+---
 
-</head>
-<body>
-<div class="main_container">
-	<div class="header">
-		<a class="logo" href="#">Open Ag Data Alliance<span>To help farmers access and control their data</span></a>
-	</div>
-	<div class="content">
-		<h1>OADA<span>We’re Coming Very Soon</span></h1>
-		<div class="right_side">
-      <p>// <a href="#">info@openag.io</a></p>
-		</div>
-  </div>
-  <div class="well">
-    <a href="https://github.com/oada">Follow the GitHub project</a>.
-  </div>
-	
+<div class="nav-wrap">
+	 {% include main-nav.md %}
 </div>
-</body>
-</html>
+      <header class="home-header clearfix">
+      <div class="brand-wrap">
+      <div class="brand-logo"><img src="/img/oada-logo.svg"></div>
+      <div class="brand-title"><h1 class="ag-title">{{ site.name }}</h1></div>
+      </div>
+      </header>
+
+
+<div class="home">
+      <header class="main-header">
+       <div class="github-fork-ribbon-wrapper right">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/oada"><i class="fa fa-code-fork"></i> Fork us on GitHub</a>
+        </div>
+    </div>
+      
+    <div class="row">
+      <div class="intro small-12 small-centered medium-10 medium-centered large-8 large-centered columns panel radius">
+     
+        <div class="panel"> <div class="site-desc">
+            
+            <p>The Open Ag Data Alliance is an open project designed to bring interoperability, 
+              security, and privacy to agricultural data.  <p><strong>The central guiding principle of OADA is that 
+          each farmer owns data generated or entered by the farmer, their employees, or by machines performing 
+          activities on their farm.</strong>  </p><p>By enabling interoperability through secure, public API’s for transferring 
+          and using data, farmers will be free to choose cloud providers they trust while retaining control 
+          over who can use their data.  The OADA community is building a set of open API’s for securely using data with the cloud.  
+          Anyone can use these API’s in their own cloud systems, and if they pass the same software tests 
+          as the open reference implementation, they will be considered technically compliant.  Community 
+          guidelines are also being developed outlining data privacy and use standards that will be used 
+          to define levels of OADA compliance.</p></div>
+
+        <p align="left">Read the OADA principles <a href="/principles/">here</a>...</p>
+        
+        <hr color="#FFFFFF"/>
+
+          <h3>
+            GET INVOLVED<br><small>Read the <a href="https://github.com/oada/oada-wiki/wiki" target="_blank"><i class="fa fa-folder-open-o"></i> docs</a>, 
+            join the <a href="https://groups.google.com/forum/#!forum/oada-dev"><i class="fa fa-envelope-o"></i> mailing list</a>, and 
+            <a href="https://github.com/OADA/" target="_blank"><i class="fa fa-code-fork"></i> fork OADA</a> on Github. </small>
+          </h3>          
+        </div>
+      </div>
+    </div>
+      </header>
+    </div>
+   <!-- <div class="">
+          <div class="main-wrap">
+	         <h1>Additional Here</h1>
+	         <section class="">
+	         <h2>Information</h2>
+	         <p>Some Information here</p>
+	         </section>
+	         <section class="">
+		        <h2>Second Section</h2>
+		        <p>Addtional Info</p> 
+	         </section>
+          </div>
+    </div> -->
+    
+    
+    
+    

@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Richard Greathouse -- Web Developer -- @richardg411
+
+# THANKS
+
+    Ingredients Design - http://ingredientsdesign.com
+    
+    Open Ag Data Allaince - http://openag.io
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JS
+    H5BP, Foundation, jQuery, Modernizr, Selectivizr
+	Jekyll, Grunt, Bower
+	Font Awesome,
+    Hosted by GitHub Pages
