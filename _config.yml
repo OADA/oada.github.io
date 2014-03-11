@@ -2,4 +2,4 @@ name: Open Ag Data Alliance
 markdown: redcarpet
 pygments: true
 timezone: America/New_York
-url: http://openag.io
+url: http://0.0.0.0:4000

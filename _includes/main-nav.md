@@ -2,12 +2,11 @@
 
     <nav class="top-bar" data-topbar>
         <ul class="title-area">
-            <li class="name">
-            <!--<img class="logo" src="/img/oada-logo.svg">-->
-                <h1 class="ag-title"><a href="#">{{ site.name }}</a></h1>
-            </li>
+           <li class="name">
+           <!--      <h1 class="ag-title"><a href="#">{{ site.name }}</a></h1> -->
+            </li> 
 
-            <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+            <li class="toggle-topbar menu-icon left"><a href="#">Menu</a></li>
         </ul>
 
         <section class="top-bar-section clearfix">

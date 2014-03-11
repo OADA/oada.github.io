@@ -8,9 +8,12 @@ title: Latest Updates
   		<section class="post-excerpt">
 		{% for post in site.posts %}
 	         <section class="" data-magellan-destination="" name="">
-	         <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+	         <header class="excerpt-head">
+	         <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
 	         <small><i class="fa fa-calendar"></i> {{ post.date | date_to_string }} | <i class="fa fa-tag"></i> {{post.tags}}</small>
+	         </header>
 	         <p>{{ post.content }}</p>
+	         <footer class="excerpt-foot"><a class="button left round" href="{{ post.url }}">Click to Comment</a></footer>
           </section>
           {% endfor %}
           </section>

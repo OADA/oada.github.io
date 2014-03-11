@@ -3,6 +3,17 @@ title: Home
 layout: default
 ---
 
+<div class="nav-wrap">
+	 {% include main-nav.md %}
+</div>
+      <header class="home-header clearfix">
+      <div class="brand-wrap">
+      <div class="brand-logo"><img src="/img/oada-logo.svg"></div>
+      <div class="brand-title"><h1 class="ag-title">{{ site.name }}</h1></div>
+      </div>
+      </header>
+
+
 <div class="home">
       <header class="main-header">
        <div class="github-fork-ribbon-wrapper right">
@@ -13,12 +24,7 @@ layout: default
       
     <div class="row">
       <div class="intro small-12 small-centered medium-10 medium-centered large-8 large-centered columns panel radius">
-      <div class="home-nav"> 
-      {% include main-nav.md %}
-       </div>
-      	<header class="brand-wrap clearfix"><div class="brand-logo"><img src="/img/oada-logo.svg"></div>
-      	<div class="brand-title"><h1 class="ag-title">{{ site.name }}</h1></div>
-      	</header>
+     
         <div class="panel"> <div class="site-desc">
             
           <p>The Open Ag Data Alliance is an open source project designed to bring interoperability, 
