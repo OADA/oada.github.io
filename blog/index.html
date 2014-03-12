@@ -1,20 +1,18 @@
 ---
 layout: page
-title: Latest Updates
+title: Open Ag Data Alliance Updates
 ---
 {% include post-nav.md %}
-
            <div class="content page-aside">
-  		<section class="post-excerpt">
-		{% for post in site.posts %}
-	         <section class="" data-magellan-destination="" name="">
-	         <header class="excerpt-head">
-	         <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-	         <small><i class="fa fa-calendar"></i> {{ post.date | date_to_string }} | <i class="fa fa-tag"></i> {{post.tags}}</small>
+  		{% for post in site.posts %}
+  		<section class="post-excerpt" data-magellan-destination="" name="">
+	         <header class="head-excerpt">
+	         <h2><a href="{{ post.url }}">{{ post.title }}</a> <small><i class="fa fa-calendar-o"></i> {{ post.date | date_to_string }}</small></h2>
 	         </header>
-	         <p>{{ post.content }}</p>
-	         <footer class="excerpt-foot"><a class="button left round" href="{{ post.url }}">Click to Comment</a></footer>
+	         <div class="content-excerpt">{{ post.content }}</div>
+	         <footer class="foot-excerpt clearfix panel radius"><a class="button left round" href="{{ post.url }}"><i class="fa fa-comments-o"></i> View Comments...</a>
+{% include social-share-array.md%}         
+	        </footer>
           </section>
           {% endfor %}
-          </section>
     </div>

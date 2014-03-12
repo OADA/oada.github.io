@@ -4,7 +4,7 @@
       </h1>
 	      <p class="copy">&copy; 2014 <span class="ag-title">Open Ag Data Alliance</span> <br> Created by <a href="http://ingredientsdesign.com" target="_blank">Ingredients Design</a>
       </p>
-      <p>Proudly hosted by <img class="git-logo" src="/img/github-logo.svg"></p>
+      <p>Proudly hosted by <img class="git-logo" src="/img/github-logo.svg" alt="GitHub Logo"></p>
       </div>
       </footer>
       
