@@ -3,7 +3,8 @@ layout: post
 title:  "Openag.io is now Live!"
 date:   2014-03-10 08:51:05
 categories: openag
-tags: updates
+tags: 
+    - updates
 ---
 
 Welcome to the Open Ag Data Alliance Project.

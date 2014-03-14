@@ -3,3 +3,10 @@ markdown: redcarpet
 pygments: true
 timezone: America/New_York
 url: http://openag.io
+permalink: /updates/:year/:month/:title
+description: The Open Ag Data Alliance is an open project designed to bring interoperability, security, and privacy to agricultural data.
+keywords:
+    - Open Ag Data Alliance 
+    - OADA 
+    - Open Source Project
+    - Agricultural Data

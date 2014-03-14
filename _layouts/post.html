@@ -1,19 +1,22 @@
 ---
 layout: default
 ---
-
-<div class="nav-wrap">
+<div class="nav-wrap" data-magellan-destination="top">
 	 {% include main-nav.md %}
 </div>
 <div class="page-wrap">
 <header class="page-header clearfix">
       <div class="brand-wrap">
-      <div class="brand-logo"><img src="/img/oada-logo.svg"></div>
+      <div class="brand-logo">
+      <img data-interchange="[/img/oada-logo.png, (only screen and (min-width: 1px))], [/img/oada-logo.svg, (only screen and (min-width: 1200px))]">
+      		<noscript><img class="/img/oada-logo.png"></noscript></div>
       <div class="brand-title"><h1 class="page-title">{{ page.title }}</h1></div>
-	  <div class="meta"><i class="fa fa-calendar-o"></i> {{ page.date | date_to_string }} <span>|</span> <i class="fa fa-tags"></i> {{page.tags}} <span>|</span> <i class="fa fa fa-folder-o"></i> {{page.categories}}</div>		
+	  <div class="meta"><i class="fa fa-calendar-o"></i> {{ page.date | date_to_string }} <span>|</span> 
+	  <i class="fa fa-tags"></i> {{ page.tags | join: ', ' }}	  
+	   <span>|</span> 
+	  <i class="fa fa fa-folder-o"></i> {{page.categories}}</div>		
       </div>
   </header>
-
 <article class="main-wrap clearfix">
 <header class="post-title">
 </header>

@@ -12,11 +12,12 @@ layout: default
     </div>      
       <header class="home-header clearfix">
       <div class="brand-wrap">
-      <div class="brand-logo"><img src="/img/oada-logo.svg"></div>
+      <div class="brand-logo">
+      	<img data-interchange="[/img/oada-logo.png, (only screen and (min-width: 1px))], [/img/oada-logo.svg, (only screen and (min-width: 1200px))]">
+      		<noscript><img class="/img/oada-logo.png"></noscript></div>
       <div class="brand-title"><h1 class="page-title">{{ site.name }}</h1></div>
-      <div class="page-desc" data-magellan-destination="top">The Open Ag Data Alliance is an open project designed to bring interoperability, 
-              security, and privacy to agricultural data.</div>
-      </div>
+      <div class="page-desc">{{site.description}}</div>
+       </div>
       </header>
 	<div class="home">
       <div class="intro small-12 small-centered medium-10 medium-centered large-8 large-centered columns panel">     
