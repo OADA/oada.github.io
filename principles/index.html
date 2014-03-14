@@ -4,10 +4,10 @@ title: Principles
 description: An open standards software project to bring farmer-centered interoperability, security, and privacy to agricultural data.
 ---
 <aside class="left-sidebar">
-<div data-magellan-expedition="fixed">
+<div id="side-magellan" data-magellan-expedition="fixed">
   <ul class="side-nav" >  
     <li class="menu-title"><label>Jump to a section:</label></li>
-   <!-- <li data-magellan-arrival="top"><a href="#top">Top</a></li> -->
+    <li data-magellan-arrival="top"><a href="#top">Top</a></li>
     <li data-magellan-arrival="summary"><a href="#summary">Summary</a></li>
     <li data-magellan-arrival="background"><a href="#background">Background</a></li>
     <li data-magellan-arrival="mission"><a href="#mission">Mission</a></li>
@@ -20,9 +20,10 @@ description: An open standards software project to bring farmer-centered interop
 <div class="content page-aside principles">
 <article class="main-wrap">
   <!-- SUMMARY SECTION -->
-  <a name="summary"></a>
-  <section class="" data-magellan-destination="summary">
-    <h2>Summary</h2>
+
+  <section>
+    <a name="summary"></a>
+    <h2 data-magellan-destination="summary">Summary</h2>
     <p>This document describes the motivation behind forming the Open Ag Data Alliance (OADA), 
     data-related challenges that farmer’s face today, how OADA will address those challenges, and 
     how farmers will benefit from OADA. OADA will create a secure data ecosystem that enables <strong>data 
@@ -38,10 +39,10 @@ description: An open standards software project to bring farmer-centered interop
     agriculture.</p>
   </section>
   <!-- BACKGROUND SECTION -->
+  <section>
   <a name="background"></a>
-  <section class="" data-magellan-destination="background">
-    <h2>Background</h2>
-  <div class="row">    
+    <h2 data-magellan-destination="background">Background</h2>
+   <div class="row">
     <p>Modern production agriculture has the potential to dramatically improve crop yields and reduce 
     environmental impacts by enabling farmers to properly evaluate past, current and future farm management 
     decisions through analysis of agronomic data generated in the field.</p>
@@ -53,14 +54,12 @@ description: An open standards software project to bring farmer-centered interop
     <p>The most scalable solution for farmers is to enable their hardware and software systems to communicate 
     automatically through secure cloud services or tools. Any system needs to incorporate data from 
     a multitude of sources in order to be useful. However, existing solutions suffer from:
-    <div>
     <ul>
       <li>an inability to gather data from all aspects of any given farm since no one manufacturer 
           accesses all the operational data on a farm, </li>
       <li>farmers’ concern about what will happen to their data, </li>
       <li>and questions about data ownership and intellectual property.</li>
-    </ul>
-    </div>
+    </ul></p>
 </div>
     <p>In order to enable this next stage in production agriculture productivity, these three issues 
     have to be resolved.  Past attempts at solving data sharing and compatibility have revolved around 
@@ -70,14 +69,13 @@ description: An open standards software project to bring farmer-centered interop
     Other industries have faced a similar stage in their evolution, including financial services, 
     healthcare, and the Internet. In all cases, a distributed, rather than centralized, network model 
     emerged as best for the end users. </p>
-  </div>
+   </div>
   </section>
 
   <!-- MISSION SECTION -->
+  <section>
   <a name="mission"></a>
-  <section class="" data-magellan-destination="mission">
-
-    <h2>What OADA is</h2>
+    <h2 data-magellan-destination="mission">What OADA is</h2>
       <div class="row">
     <p>With the mission to ensure farmers have full data access, security and privacy, OADA:
     <ul>
@@ -219,9 +217,9 @@ description: An open standards software project to bring farmer-centered interop
       </div>
   </section>
   <!-- TECH SUMMARY SECTION -->
-  <a name="tech-summary"></a>
-  <section class="" data-magellan-destination="tech-summary">
-    <h2>Technical Summary of the OADA Approach</h2>
+  <section>
+    <a name="tech-summary"></a>
+    <h2 data-magellan-destination="tech-summary">Technical Summary of the OADA Approach</h2>
     <div class="row">
     <p>The following sections contain technical details and are written for architects and engineers. </p>
     <p>To address the farmer’s data interoperability and security concerns, a set of common, extensible 
@@ -293,7 +291,8 @@ description: An open standards software project to bring farmer-centered interop
 </div>
       </p>
    <p> An early draft of the API specification using the API specification language <a href="http://raml.org">RAML</a>
-    can be found on <a href="https://github.com/OADA/oada-api-spec/blob/master/oada-api.raml">Github</a></p>
+    can be found on <a href="https://github.com/OADA/oada-api-spec/blob/master/oada-api.raml">Github</a></p>      <a  data-magellan-destination="structure"></a>
+
 <div class="panel radius">
     <p>Potential future API capabilities will include searching, synchronization, alerting, and streaming:
     <ul>
@@ -321,8 +320,8 @@ description: An open standards software project to bring farmer-centered interop
     </div>
   </section>
   <!-- PROJECT STRUCTURE SECTION -->
-  <a name="structure"></a>
-  <section class="" data-magellan-destination="structure">
+	<a name="structure"></a>
+  <section class="" >
     <h2>Project Structure</h2>
     <p>Please refer to the <a href="https://github.com/OADA/oada-wiki/wiki/Developer-Guidelines">Developer Guidelines</a>
     for information about contributing to the project and the process by which code will be approved for

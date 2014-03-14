@@ -8,18 +8,10 @@
       </div>
       </footer>      
  <script src="//code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script type="text/javascript">window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>    
+    <script type="text/javascript">window.jQuery || document.write('<script src="/js/vendor/jquery.min.js"><\/script>')</script>    
     <script src="/js/foundation.min.js"></script>
     <script src="/js/main.min.js"></script>
-<script>
-$(document).foundation({
-        magellan : {
-           active_class: 'active',
-           threshold: 0
-        }
-    });
-  svgeezy.init("nocheck","png");
-</script>
+	<script src="/js/init.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
