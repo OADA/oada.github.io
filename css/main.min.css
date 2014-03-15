@@ -693,7 +693,11 @@ footer.main-foot {
 	.foot-excerpt .social {
 		display:none;
 	}
-	
+	.principles {
+		width:100%;
+		float:none;
+		margin:auto;
+	}
 	.social {
 		display:block;
 		clear:both;
