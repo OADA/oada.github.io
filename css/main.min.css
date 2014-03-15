@@ -624,6 +624,9 @@ footer.main-foot {
 	}
 }
 @media screen and (max-width:650px) {
+	body {
+		background:#fff;
+	}
 	.left-sidebar {
 		display:none;
 	}
