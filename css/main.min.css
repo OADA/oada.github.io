@@ -624,6 +624,9 @@ footer.main-foot {
 	}
 }
 @media screen and (max-width:650px) {
+	body {
+		background:#fff;
+	}
 	.left-sidebar {
 		display:none;
 	}
@@ -652,6 +655,7 @@ footer.main-foot {
 		left:0;
 		bottom:0;
 		margin:auto;
+		width:200px;
 		height:200px;
 	}
 	
@@ -689,7 +693,11 @@ footer.main-foot {
 	.foot-excerpt .social {
 		display:none;
 	}
-	
+	.principles {
+		width:100%;
+		float:none;
+		margin:auto;
+	}
 	.social {
 		display:block;
 		clear:both;
