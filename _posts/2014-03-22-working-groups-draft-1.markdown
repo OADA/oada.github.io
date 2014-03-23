@@ -3,6 +3,9 @@ layout: post
 title:  "Draft of Working Groups Published"
 date:   2014-03-10 08:51:05
 categories: openag
+tweet: "First draft of OADA working groups published: http://bit.ly/1iqr5Fm.  Looking for volunteers! "
+short-url: "http://bit.ly/1iqr5Fm"
+hashtags: openagio
 tags: 
     - working groups
 ---

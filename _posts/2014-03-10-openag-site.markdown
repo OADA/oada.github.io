@@ -3,6 +3,9 @@ layout: post
 title:  "Openag.io is now Live!"
 date:   2014-03-10 08:51:05
 categories: openag
+tweet: "Openag.io is now Live!  http://openag.io"
+short-url: "http://openag.io" 
+hashtags: "openagio"
 tags: 
     - updates
 ---
