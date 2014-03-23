@@ -4,7 +4,7 @@ title:  "Openag.io is now Live!"
 date:   2014-03-10 08:51:05
 categories: openag
 tweet: "Openag.io is now Live!"
-hashtags: "openagio"
+hashtags: "openagio,"
 tags: 
     - updates
 ---
