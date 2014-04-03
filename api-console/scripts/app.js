@@ -2145,7 +2145,7 @@ RAML.Inspector = (function() {
       $scope.$watch('$parent.model', filterEnumElements);
 
       $scope.selectItem = function(item) {
-        $scope.model = item;
+        $scope.model = $scope.$parent.model = item;
         $scope.focused = false;
       };
 
@@ -2195,8 +2195,7 @@ RAML.Inspector = (function() {
           var selection = $scope.filteredEnum[$scope.selectedIndex];
 
           if (selection) {
-            $scope.model = selection;
-            $scope.focused = false;
+            $scope.selectItem(selection);
           }
           e.preventDefault();
           break;
@@ -2641,7 +2640,7 @@ RAML.Inspector = (function() {
     });
     function prepare($scope, $element, $resourceEl, resource, method) {
       $scope.selectMethod = function(method) {
-        DataStore.set(resource.toString() + ':method:', method.method);
+        DataStore.set(resource.toString() + ':method', method.method);
         $scope.selectedMethod = method;
         $scope.keyBase = resource.toString() +':' + method.method;
       };
@@ -2649,7 +2648,7 @@ RAML.Inspector = (function() {
       $scope.closePopover = function(e) {
         e.preventDefault();
 
-        DataStore.set(resource.toString() + ':method:', undefined);
+        DataStore.set(resource.toString() + ':method', undefined);
         popover.close($scope);
         popover = undefined;
       };

@@ -1605,7 +1605,11 @@
                   ownNodeProperty[1] = nonNullNode;
                 }
                 ownNodeProperty[1].combine(resourceProperty[1]);
-                _results1.push(ownNodeProperty[0].value = ownNodeProperty[0].value.replace(/\?$/, ''));
+                if (!((ownNodeProperty[0].value.slice(-1) === '?') && (resourceProperty[0].value.slice(-1) === '?'))) {
+                  _results1.push(ownNodeProperty[0].value = ownNodeProperty[0].value.replace(/\?$/, ''));
+                } else {
+                  _results1.push(void 0);
+                }
               } else {
                 _results1.push(void 0);
               }
@@ -2427,11 +2431,11 @@
         xhr.open('GET', file, false);
         xhr.setRequestHeader('Accept', 'application/raml+yaml, */*');
         xhr.onreadystatechange = function() {
-          var data;
+          var tmp;
           if (xhr.readyState === 4) {
             if ((typeof xhr.status === 'number' && xhr.status === 200) || (typeof xhr.status === 'string' && xhr.status.match(/^200/i))) {
-              data = JSON.parse(xhr.responseText);
-              return deferred.resolve(atob(data.content));
+              tmp = JSON.parse(xhr.responseText);
+              return deferred.resolve(atob(tmp["content"]));
             } else {
               return deferred.reject(new exports.FileError("while fetching " + file, null, "cannot fetch " + file + " (" + xhr.statusText + ")", _this.start_mark));
             }
@@ -11581,8 +11585,8 @@ function indexOf (xs, x) {
   return -1;
 }
 
-}).call(this,require("/home/awlayton/source/awlayton.github.io/api-console/app/vendor/bower_components/raml-js-parser/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"))
-},{"./index.js":39,"/home/awlayton/source/awlayton.github.io/api-console/app/vendor/bower_components/raml-js-parser/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":30,"buffer":31,"events":23,"inherits":29,"process/browser.js":40,"string_decoder":45}],43:[function(require,module,exports){
+}).call(this,require("/home/awlayton/source/api-console/app/vendor/bower_components/raml-js-parser/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"))
+},{"./index.js":39,"/home/awlayton/source/api-console/app/vendor/bower_components/raml-js-parser/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":30,"buffer":31,"events":23,"inherits":29,"process/browser.js":40,"string_decoder":45}],43:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -13598,8 +13602,8 @@ function hasOwnProperty(obj, prop) {
   return Object.prototype.hasOwnProperty.call(obj, prop);
 }
 
-}).call(this,require("/home/awlayton/source/awlayton.github.io/api-console/app/vendor/bower_components/raml-js-parser/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":47,"/home/awlayton/source/awlayton.github.io/api-console/app/vendor/bower_components/raml-js-parser/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":30,"inherits":29}],49:[function(require,module,exports){
+}).call(this,require("/home/awlayton/source/api-console/app/vendor/bower_components/raml-js-parser/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"./support/isBuffer":47,"/home/awlayton/source/api-console/app/vendor/bower_components/raml-js-parser/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js":30,"inherits":29}],49:[function(require,module,exports){
 /*!
  * inflection
  * Copyright(c) 2011 Ben Lin <ben@dreamerslab.com>
@@ -18186,7 +18190,7 @@ exports.XMLHttpRequest = function() {
   };
 };
 
-}).call(this,require("/home/awlayton/source/awlayton.github.io/api-console/app/vendor/bower_components/raml-js-parser/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),require("buffer").Buffer)
+}).call(this,require("/home/awlayton/source/api-console/app/vendor/bower_components/raml-js-parser/node_modules/browserify/node_modules/insert-module-globals/node_modules/process/browser.js"),require("buffer").Buffer)
 },{"child_process":22,"fs":22,"http":24,"https":28,"url":46}]},{},[10])
 (10)
 });
