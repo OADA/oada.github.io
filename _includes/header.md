@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="/favicon.png">
 	<link href="//fonts.googleapis.com" rel="dns-prefetch">
 	<link href="//www.google-analytics.com" rel="dns-prefetch">
-	<link href="//code.jquery.com" rel="dns-prefetch">       
+	<script src="/js/vendor/jquery.min.js"></script>
 	<!-- Fonts -->
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic,700" rel="stylesheet" type="text/css"> 
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">	
