@@ -176,6 +176,14 @@ h1.page-title {
 	color:#444;
 }
 
+.partner-desc {
+	text-align:left;
+	font-size:1.2rem;
+	width:80%;
+	margin:auto;
+	color:#444;
+}
+
 .principles figcaption {
 	color:#4269A8;
 }
@@ -710,4 +718,9 @@ footer.main-foot {
 		display:block;
 		width:75%;
 	}
+
+  partner-logo.img {
+    width: 250px;
+  }
+
 }

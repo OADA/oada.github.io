@@ -1,0 +1,111 @@
+---
+layout: partners
+title: OADA Partners
+description: The OADA community would like to thank all our great partners for their support and involvement in
+             our mission of bringing farmer-focused interoperability, security, and privacy to ag data through
+             open source software and API's.
+
+---
+
+<div id="main" class="content page-aside principles">
+<article class="main-wrap">
+  <!-- SUMMARY SECTION -->
+
+  <section>
+    <a name="Partners List"></a>
+    
+    <div id="logos-container" class="row"></div>
+<script type="text/javascript" src="/js/vendor/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+  var partners = [ 
+    {
+      name: "Climate Corporation",
+      url: "http://climate.com",
+      logo: "partner_logos/SQUARE_climate_corp.png",
+      width: "250px",
+    }, 
+    {
+      name: "CNHi",
+      url: "http://www.cnhindustrial.com/en-US/Pages/HomePage.aspx",
+      logo: "partner_logos/SQUARE_cnh.png",
+      width: "250px",
+    }, 
+    {
+      name: "Valley Irrigation",
+      url: "http://www.valleyirrigation.com",
+      logo: "partner_logos/SQUARE_valley_irrigation.png",
+      width: "250px",
+    }, 
+    {
+      name: "Wilbur Ellis",
+      url: "http://www.wilburellis.com",
+      logo: "partner_logos/SQUARE_wilbur_ellis.png",
+      width: "250px",
+    },
+    {
+      name: "GROWMARK",
+      url: "http://www.growmark.com",
+      logo: "partner_logos/SQUARE_fs_growmark.jpg",
+      width: "250px",
+    },
+  ];
+
+  var str = "";
+  var cols = 3;
+  var fdn_cols = 12;
+  var span = Math.floor(fdn_cols / cols);
+  var div_closed = false;
+  for(var i=0; i<partners.length; i++) {
+    var p = partners[i];
+    if ((i % cols) === 0) {
+      str += '<div class="row" >\n';
+      div_closed = false;
+    }
+    str += '  <div class="small-'+span+' column text-center">\n';
+    str += '    <a href="'+p.url+'">';
+    str += '      <img ';
+    if (typeof  p.width !== 'undefined') str += ' width="'+p.width+'" ';
+    if (typeof p.height !== 'undefined') str += ' height="'+p.height+'" ';
+    str += 'class="partner-logo" src="'+p.logo+'" /><br/><br/>\n'; // end of img tag
+    str += '      '+p.name+' \n';
+    str += '    </a>';
+    str += '  </div>\n';
+
+    if (((i+1) % cols) === 0) {
+      str += '</div>\n';
+      //str += "<hr/>";
+      div_closed = true;
+    }
+  }
+  if (!div_closed) {
+    str += "</div>";
+    str += "<hr/>";
+  }
+  console.log("str = ", str);
+  $("#logos-container").html(str);
+  });
+</script>
+
+  </section>
+</article>
+</div>
+
+
+<!-- take out the script below once preview is done -->
+<script type="text/javascript" src="/js/vendor/jquery.min.js"></script>
+<script type="text/javascript">
+  $(main).hide();
+  var pass = false;
+  var prompt_text = "Enter password: ";
+  while(1) {
+    pass = window.prompt(prompt_text);
+    if (pass !== 'openag-preview') {
+      prompt_text = "Password incorrect.  Enter password: ";
+    } else {
+      break;
+    }
+  }
+  $(main).show();
+</script>
+
