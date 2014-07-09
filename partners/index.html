@@ -70,6 +70,12 @@ description: The OADA community would like to thank all our great partners for t
 
   ];
 
+  partners.sort(function(a,b) {
+    if (a.name > b.name) return 1;
+    if (a.name == b.name) return 0;
+    return -1;
+  });
+
   var str = "";
   var cols = 4;
   var fdn_cols = 12;
@@ -81,7 +87,7 @@ description: The OADA community would like to thank all our great partners for t
       str += '<div class="row" >\n';
       div_closed = false;
     }
-    str += '  <div class="small-'+span+' column text-center">\n';
+    str += '  <div class="medium-'+span+' column text-center">\n';
     str += '    <a href="'+p.url+'">';
     str += '      <img ';
     if (typeof  p.width !== 'undefined') str += ' width="'+p.width+'" ';
