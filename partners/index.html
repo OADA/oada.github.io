@@ -20,6 +20,12 @@ description: The OADA community would like to thank all our great partners for t
   $(document).ready(function() {
   var partners = [ 
     {
+      name: "Open Ag Tech and Systems Group at Purdue University",
+      url: "https://engineering.purdue.edu/oatsgroup/",
+      logo: "partner_logos/SQUARE_purdue.png",
+      width: "250px",
+    }, 
+    {
       name: "Climate Corporation",
       url: "http://climate.com",
       logo: "partner_logos/SQUARE_climate_corp.png",
@@ -49,10 +55,23 @@ description: The OADA community would like to thank all our great partners for t
       logo: "partner_logos/SQUARE_fs_growmark.jpg",
       width: "250px",
     },
+    {
+      name: "WinField",
+      url: "http://www.winfield.com",
+      logo: "partner_logos/SQUARE_winfield.png",
+      width: "250px",
+    },
+    {
+      name: "AgReliant",
+      url: "http://www.agreliantgenetics.com",
+      logo: "partner_logos/SQUARE_agreliant.png",
+      width: "250px",
+    },
+
   ];
 
   var str = "";
-  var cols = 3;
+  var cols = 4;
   var fdn_cols = 12;
   var span = Math.floor(fdn_cols / cols);
   var div_closed = false;
@@ -74,7 +93,7 @@ description: The OADA community would like to thank all our great partners for t
 
     if (((i+1) % cols) === 0) {
       str += '</div>\n';
-      //str += "<hr/>";
+      str += "<hr/>";
       div_closed = true;
     }
   }
