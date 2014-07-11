@@ -7,6 +7,7 @@
         <section class="top-bar-section clearfix">
             <ul class="left">
                 <li><a href="/">Home</a></li>
+                <li><a href="/partners/">Partners</a></li>
                 <li><a href="/principles/">Principles</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href=" https://github.com/oada/oada-wiki/wiki">Wiki</a></li>
