@@ -2,11 +2,9 @@
 <ul class="side-nav">
 <li><label>Recent Post</label></li>
 	{% for post in site.posts %}
-    {% if post.previewmode != "true" %}
-      <li>
+      <li class="{% if post.previewmode == "true" %} previewmode {% endif %}">
         <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
-    {% endif %}
   {% endfor %}
 </ul>
 </aside>
