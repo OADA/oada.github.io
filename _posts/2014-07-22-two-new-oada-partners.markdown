@@ -5,7 +5,7 @@ date:   2014-07-22 08:00:00
 categories: openag,partners
 tweet: "Three New OADA Partners"
 hashtags: "openagio,agricircle,agspace,onfarm"
-previewmode: "true"
+previewmode: "false"
 tags: 
     - partners
 ---

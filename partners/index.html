@@ -7,7 +7,7 @@ description: The OADA community would like to thank all our great partners for t
 
 ---
 
-<div id="main" class="content principles">
+<div id="main" class="content principles previewmode">
 <article class="main-wrap">
   <!-- SUMMARY SECTION -->
 
@@ -19,6 +19,26 @@ description: The OADA community would like to thank all our great partners for t
 <script type="text/javascript">
   $(document).ready(function() {
       var partners = [ 
+    {
+      name: "AgriCircle",
+      url: "http://www.agricircle.com/",
+      logo: "partner_logos/SQUARE_agricircle.png",
+      width: "200px",
+      }, 
+
+    {
+      name: "AgSpace",
+      url: "http://www.ag-space.com/",
+      logo: "partner_logos/SQUARE_agspace.png",
+      width: "200px",
+    }, 
+
+    {
+      name: "OnFarm",
+      url: "http://www.onfarm.com/",
+      logo: "partner_logos/SQUARE_onfarm.png",
+      width: "200px",
+    }, 
 
     {
       name: "Open Ag Tech and Systems Group at Purdue University",
@@ -84,7 +104,7 @@ description: The OADA community would like to thank all our great partners for t
   });
 
   var str = "";
-  var cols = 3;
+  var cols = 4;
   var fdn_cols = 12; // need 1 on right and left for centering
   var span = Math.floor(fdn_cols / cols);
   var div_closed = false;
@@ -123,22 +143,18 @@ description: The OADA community would like to thank all our great partners for t
 </article>
 </div>
 
-
-<!-- take out the script below once preview is done -->
-<!--
+<!-- take out the script below once preview is done
 <script type="text/javascript" src="/js/vendor/jquery.min.js"></script>
 <script type="text/javascript">
   $(main).hide();
   var pass = false;
   var prompt_text = "Enter password: ";
-  while(1) {
-    pass = window.prompt(prompt_text);
-    if (pass !== 'openag-preview') {
-      prompt_text = "Password incorrect.  Enter password: ";
-    } else {
-      break;
-    }
+  pass = window.prompt(prompt_text);
+  console.log("pass = ", pass);
+  if (pass !== 'openag-preview') {
+    $(main).html("<font color='red'>Password incorrect.  Reload to try again.</font>");
+  } else {
+    // password correct, main.show below will work fine.
   }
   $(main).show();
-</script>
--->
+</script> -->
