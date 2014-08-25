@@ -19,6 +19,28 @@ description: The OADA community would like to thank all our great partners for t
 <script type="text/javascript">
   $(document).ready(function() {
       var partners = [ 
+
+    {
+        name: "360 Yield Center",
+        url: "http://360yieldcenter.com/",
+        logo: "partner_logos/SQUARE_360yieldcenter.png",
+        width: "200px",
+    },
+
+    {
+        name: "ApRecs",
+        url: "http://www.aprecs.com",
+        logo: "partner_logos/SQUARE_aprecs.png",
+        width: "200px",
+    },
+
+    {
+        name: "Centricity",
+        url: "http://www.centricity.us",
+        logo: "partner_logos/SQUARE_centricity.png",
+        width: "200px",
+    },
+
     {
       name: "Ayrstone",
       url: "http://www.ayrstone.com",
@@ -151,19 +173,5 @@ description: The OADA community would like to thank all our great partners for t
 </article>
 </div>
 
-{% include preview_pass.js %} 
-<!-- take out the script below once preview is done
-<script type="text/javascript" src="/js/vendor/jquery.min.js"></script>
-<script type="text/javascript">
-  $(main).hide();
-  var pass = false;
-  var prompt_text = "Enter password: ";
-  pass = window.prompt(prompt_text);
-  console.log("pass = ", pass);
-  if (pass !== 'openag-preview') {
-    $(main).html("<font color='red'>Password incorrect.  Reload to try again.</font>");
-  } else {
-    // password correct, main.show below will work fine.
-  }
-  $(main).show();
-</script> -->
+
+{% include preview_pass.js %}
