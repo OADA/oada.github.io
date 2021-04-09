@@ -2,7 +2,7 @@
 	<div class="foot-wrap">
       <h1 class="foot-brand ag-title">Open Ag Data Alliance
       </h1>
-	      <p class="copy">&copy; 2014 <span class="ag-title">Open Ag Data Alliance</span> <br> Created by <a href="http://ingredientsdesign.com" target="_blank">Ingredients Design</a>
+	      <p class="copy">&copy; 2021 <span class="ag-title">Open Ag Data Alliance</span> 
       </p>
       <p>Proudly hosted by <img class="git-logo" src="/img/github-logo.svg" alt="GitHub Logo"></p>
       </div>
